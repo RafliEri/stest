@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stress test</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>ini header</h2>
+    </header>
+    <div class="questionbox">
+      <div id="question1">
+        <h2 class="dass-question">
+          Question 1: How often do you feel stressed?
+        </h2>
+        <label><input type="radio" name="q1" value="1" /> Never</label><br />
+        <label><input type="radio" name="q1" value="2" /> Rarely</label><br />
+        <label><input type="radio" name="q1" value="3" /> Sometimes</label
+        ><br />
+        <label><input type="radio" name="q1" value="4" /> Often</label><br />
+        <label><input type="radio" name="q1" value="5" /> Always</label><br />
+        <br />
+        <button id="next-button1">Next</button>
+      </div>
+
+      <div id="question2" style="display: none">
+        <h2 class="dass-question">Question 2: How do you cope with stress?</h2>
+        <label><input type="radio" name="q2" value="1" /> Never</label><br />
+        <label><input type="radio" name="q2" value="2" /> Rarely</label><br />
+        <label><input type="radio" name="q2" value="3" /> Sometimes</label
+        ><br />
+        <label><input type="radio" name="q2" value="4" /> Often</label><br />
+        <label><input type="radio" name="q2" value="5" /> Always</label
+        ><br /><br />
+        <button id="next-button2">Next</button>
+      </div>
+
+      <div id="question3" style="display: none">
+        <h2 class="dass-question">
+          Question 3: How do you cope with stressasdasd?
+        </h2>
+        <label><input type="radio" name="q3" value="1" /> Never</label><br />
+        <label><input type="radio" name="q3" value="2" /> Rarely</label><br />
+        <label><input type="radio" name="q3" value="3" /> Sometimes</label
+        ><br />
+        <label><input type="radio" name="q3" value="4" /> Often</label><br />
+        <label><input type="radio" name="q3" value="5" /> Always</label
+        ><br /><br />
+        <button id="next-button3">Next</button>
+      </div>
+
+      <div id="conclusion" style="display: none">
+        <h2>Conclusion</h2>
+        <p id="conclusionText"></p>
+        <div id="conclusionImage">
+          <img
+            id="conclusionImage1"
+            src="./image/notstress.png"
+            alt="Conclusion Image"
+            style="max-width: 50%; margin: 0 auto; display: block"
+          />
+          <img
+            id="conclusionImage2"
+            src="./image/stressed.png"
+            alt="Conclusion Image"
+            style="max-width: 50%; margin: 0 auto; display: block"
+          />
+          <img
+            id="conclusionImage3"
+            src="./image/verystress.png"
+            alt="Conclusion Image"
+            style="max-width: 50%; margin: 0 auto; display: block"
+          />
+        </div>
+        <h4 id="recommendationText"></h4>
+        <button id="restartButton">Restart Test</button>
+      </div>
+    </div>
+    <footer>
+      <p>ini footer</p>
+    </footer>
+  </body>
+</html>

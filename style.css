@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: left;
+}
+
+.questionbox {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dass-question {
+  margin-bottom: 3rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+label:hover {
+  transform: scale(1.1); /* Increase the scale on hover (adjust as needed) */
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+#conclusion {
+  text-align: center;
+  margin: 5rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 96.4%;
+}
