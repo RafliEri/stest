@@ -2,7 +2,9 @@ window.addEventListener("load", (event) => {
   const nextButton1 = document.getElementById("next-button1");
   const nextButton2 = document.getElementById("next-button2");
   const nextButton3 = document.getElementById("next-button3");
+  const startButton = document.getElementById("startTestButton");
 
+  const welcome = document.getElementById("welcome-message");
   const question1 = document.getElementById("question1");
   const question2 = document.getElementById("question2");
   const question3 = document.getElementById("question3");
@@ -11,6 +13,12 @@ window.addEventListener("load", (event) => {
   let q1Answer = null;
   let q2Answer = null;
   let q3Answer = null;
+
+  startButton.addEventListener("click", function () {
+    console.log("Start button clicked");
+    welcome.style.display = "none";
+    question1.style.display = "block";
+  });
 
   nextButton1.addEventListener("click", function () {
     console.log("Next button clicked for Question 1");
@@ -112,9 +120,10 @@ window.addEventListener("load", (event) => {
       conclusionElement.style.display = "none";
     }
 
-    const question1 = document.getElementById("question1");
-    if (question1) {
-      question1.style.display = "block";
+    const welcome = document.getElementById("welcome-message");
+    if (welcome) {
+      welcome.style.display = "block";
+      question1.style.display = "none";
     }
   }
 
